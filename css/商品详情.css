@@ -1,0 +1,426 @@
+/*css-reset*/
+body,ul,li,a,input,h1,p,h3,h2,fieldset,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img{
+	vertical-align: top;
+}
+input{
+	border: none;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+input{
+	outline: none;
+}
+
+
+/*内容部分*/
+#content{
+	width: 1200px;
+	/*height: 500px;*/
+	margin: 0 auto;
+	/*background: pink;*/
+}
+.head_menu{
+	margin: 15px 0;
+}
+.head_menu li{
+	float: left;
+}
+.head_menu ul{
+	float: left;
+}
+.menu_icon_1{
+	display: inline-block;
+	width: 5px;
+	height: 9px;
+	background: url(../img/spxq/1.png) no-repeat -15px -5px;
+}
+.head_menu a{
+	font-size: 12px;
+	color: #666;
+	padding: 3px 5px;
+}
+.head_menu form{
+	margin-left: 10px;
+}
+.head_menu .menu_xptj{
+	display: inline-block;
+	border: 1px dotted #999;
+	margin: 0 5px;
+	padding-right: 15px;
+	/*background: green;*/
+}
+.menu_xptj:hover{
+	border: 1px dotted #c40000;
+}
+.menu_3{
+	position: relative;
+}
+.menu_icon_2{
+	display: inline-block;
+	width: 8px;
+	height: 4px;
+	background: url(../img/spxq/1.png) no-repeat -27px -6px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.menu_icon_5{
+	display: inline-block;
+	width: 8px;
+	height: 4px;
+	background: url(../img/spxq/1.png) no-repeat -27px 0;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.head_menu a:hover{
+	text-decoration: underline;
+	color: #c40000;
+}
+.head_menu input{
+	padding: 3px 10px;
+	border: 1px solid #999;
+}
+.menu_info{
+	width: 830px;
+	height: 310px;
+	background: rgba(0,0,0,.7);       /*用rgba颜色比较妥当，如果用透明度的话，文字也会变得模糊*/
+	border: 1px solid #dbdbdb;
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	display: none;
+	z-index: 10;
+}
+.menu_info ul{
+	width: 117px;
+	height: 132px;           /*高度按实际的需要决定是否给高度，*/
+	padding-left: 20px;
+	margin: 10px 0 15px 0;
+	float: left;
+	border-right: 1px dashed #d5d5d5;
+}
+.menu_info ul li{     
+	width: 100px;       /*这里显式指定宽高便于布局控制也方便*/
+	height: 22px;
+}
+.menu_info ul a{
+	color: #fff;
+	font-weight: 300;
+}
+.menu_info ul a:hover{
+	color: #f2dcc7;
+}
+.menu_info .ul5,.menu_info .ul6{       /*清除第六项和最后一项的右边框*/
+	border: none;
+}
+.menu_icon_2{
+	cursor: pointer;
+}
+.head_menu span{
+	font-size: 12px;
+	color: #999;
+	float: right;
+	line-height: 22px;
+}
+
+
+
+/*商品导航*/
+#shopping_list{
+	/*width: 1200px;*/
+	/*height: 200px;*/
+	/*margin: 0 auto;*/
+	/*margin-top: 20px;*/
+	/*background: green;*/
+}
+
+
+
+
+
+
+
+/*排序和价格*/
+
+body{
+	height: 2000px;
+}
+.mainpaylist{
+	width: 1190px;
+	margin: 0 auto;
+	padding: 5px;
+	background: pink;
+	word-spacing: -5px;              
+}
+.mainAdd{
+	display: inline-block;
+	position: relative;
+}
+.mainpaylist .main_a1{
+	display: inline-block;
+	font-size: 12px;
+	width: 24px;        /*在未指定宽度的情况下火狐下会换行，也就是一行容不下两个文字*/       
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	border: 1px solid red;
+	margin-left: -1px;
+	color: #806f66;
+	padding: 0 15px 0 5px;
+	position: relative;
+}
+.mainpaylist i{
+	display: block;
+	background-image: url(../img/spxq/2.png);
+	background-repeat: no-repeat;
+}
+.main_icon_1,.main_icon_2,.main_icon_3,.main_icon_4{
+	width: 7px;
+	height: 8px;
+	background-position: -22px -24px;
+	position: absolute;
+	top: 7px;
+	right: 5px;
+}
+.main_icon_5{
+	width: 7px;
+	height: 4px;
+	background-position: -46px -24px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.main_icon_6{
+	width: 7px;
+	height: 4px;
+	background-position: -30px -28px;
+	position: absolute;
+	top: 12px;
+	right: 5px;
+}
+.mainAdd{
+	margin-left: 5px;
+	position: relative;
+}
+.mainAdd span:nth-of-type(1){
+	display: inline-block;
+	line-height: 22px;
+	padding-left: 5px;
+	font-size: 12px;
+	color: #b0a59f;
+	background: #f7f5f5;
+	border: 1px solid red;      
+	border-right: none;
+}
+.mainAdd span:nth-of-type(2){
+	display: inline-block;
+	line-height: 22px;
+	font-size: 12px;
+	color: #806f66;
+	padding: 0 25px 0 15px;
+	background: #fff;
+	border: 1px solid red;         
+	border-left: none;
+}
+.main_icon_7{
+	border: 3px solid transparent;
+	border-right: 3px solid #837269;
+	border-bottom: 3px solid #837269;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+}
+.mainAddInfo{
+	width: 350px;
+	height: 175px;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 3px #ccc;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	display: none;
+}
+.mainAddInfo p{
+	font-size: 12px;
+	color: #806f66;
+	margin: 14px 0 10px 11px;
+}
+.mainLine{
+	width: 340px;
+	height: 1px;
+	margin: 0 auto;
+	background: #d1ccc7;
+}
+.mainAddInfo a{
+	font-size: 12px;
+	color: #806f66;
+}
+.mianCity,.mainProvice{
+	margin-left: 11px;
+}
+.mianCity a{
+	display: block;
+	width: 55px;
+	float: left;
+	text-align: left;
+	margin: 5px 0;
+}
+.mainProvice a{
+	display: block;
+	width: 55px;
+	float: left;
+	text-align: left;
+	/*margin-right: 26px;*/
+	line-height: 20px;
+}
+.mainAddInfo a:hover{
+	color: #b10000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*排序和价格以前写的不太方便维护的样式*/
+.mainpaylist{
+	/*width: 1200px;*/
+	/*height: 34px;*/
+	            /*line-height: 34px;*/
+	/*margin: 0 auto;*/
+	/*background: pink;*/            /*#faf9f9*/
+}
+.mainpaylist a{
+				/*display: block;*/
+	/*float: left;*/
+	/*font-size: 12px;*/
+	/*line-height: 22px;*/
+	/*padding: 0 15px 0 5px;*/
+	/*margin-top: 5px ;*/
+	/*color: #806f66;*/
+				/*background: lightgreen;*/
+	/*border: 1px solid #cccccc;*/       /*#cccccc*/
+	/*position: relative;*/
+	/*margin-left: -1px;*/        /*消除那相邻两个边框重合部分的样式*/
+}
+.mainpaylist a:nth-of-type(1){
+	/*margin-left: 5px;*/
+}
+.mainpaylist i{
+	/*background-image: url(../img/spxq/2.png);*/
+	/*background-repeat: no-repeat;*/
+	/*display: inline-block;*/
+	/*width: 7px;
+	height: 8px;
+	position: absolute;
+	top: 7px;
+	right: 5px;*/
+}
+.main_icon_1,.main_icon_2,.main_icon_3,.main_icon_4{
+	/*background-position: -22px -24px;*/
+}
+.main_icon_3{
+	/*background-position: -30px -24px;*/
+}
+.mainpaylist .main_icon_5{
+	/*width: 7px;
+	height: 4px;
+	background-position: -38px -24px;
+	position: absolute;
+	top: 6px;
+	right: 5px;*/
+}
+.mainpaylist .main_icon_6{
+	/*width: 7px;
+	height: 4px;
+	background-position: -22px -28px;
+	position: absolute;
+	top: 12px;
+	right: 5px;*/
+}
+.mainpaylist .main_xin{
+	/*color: #b10000;*/
+}
+
+/*收货地址部分*/
+.mainShouHuo{
+				/*background: green;*/
+	/*word-spacing: -5px;*/
+}
+.mainShouHuo .address{
+	/*display: inline-block;
+	font-size: 12px;
+	padding-left: 5px;
+	height: 22px;
+	line-height: 22px;
+	margin-top: 5px;
+	margin-left: 5px;
+	color: #b0a59f;
+	border: 1px solid red;
+	background: green;*/
+}
+.mainShouHuo e{
+	/*display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	color: #806f66;
+	padding: 0 20px 0 10px;
+	background: blue;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
